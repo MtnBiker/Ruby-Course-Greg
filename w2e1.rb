@@ -8,8 +8,16 @@
 
 s = "Welcome to the forum.\nHere you can learn Ruby.\nAlong with other members.\n"
 
+def string_lines(s)
+  new_s = ""
+  arr = s.split("\n") 
+  j = 0
+  arr.each { 
+    |i| new_s << "Line #{j+1}: #{i}\n"
+    j += 1 
+  }
+  # without the next line, the original string is returned
+  new_s
+end
+puts string_lines(s)
 
-puts s
-
->ruby tmp.rb
->Exit code: 0
