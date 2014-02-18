@@ -1,5 +1,9 @@
 def multiplication_table (integer, heading = '', decorate = false)
-  
+  table = ""
+  while i<integer
+    
+    
+  end
 
 # returns a string object.
 end
