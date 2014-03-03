@@ -38,7 +38,7 @@ text_complete = ""
 File.open(text_file_to_process, 'r') do |f1|  
   while line = f1.gets  
     lineArr = line.split(" ")
-    text_complete << lineArr.join(" ") + "\n"
+    text_complete << lineArr.join(" ") + "\n" # a bit crazy, but since told to split and I could check that things were working right. Could have read file in directly
     character_count = text_complete.length
     character_count_minus_whitespace = text_complete.delete(' ').length
     word_count = text_complete.split(" ").length
@@ -58,5 +58,3 @@ File.open(text_file_to_process, 'r') do |f1|
   puts "\nsentences_per_paragragh_average: #{sentences_per_paragragh_average}"
   
 end
-
-# puts "\ntext_complete:\n#{text_complete}"
