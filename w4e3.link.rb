@@ -1,0 +1,1 @@
+/Users/gscar/Documents/Ruby/RubyCourse2014/p026zdeafgm2.rb

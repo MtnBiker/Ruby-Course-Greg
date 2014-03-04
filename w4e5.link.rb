@@ -1,0 +1,1 @@
+/Users/gscar/Documents/Ruby/RubyCourse2014/inventory.rb
