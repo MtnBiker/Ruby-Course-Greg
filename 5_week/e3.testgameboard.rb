@@ -12,7 +12,7 @@
 # c. The testgameboard.rb program uses your GameBoard class
 
 # e3.testgameboard.rb
-require 'e3.gameboard'
+require_relative 'e3.gameboard.clean' ###### Change when get answer
 
 # track how many guesses the user makes
 no_of_guesses = 0
@@ -29,12 +29,13 @@ locations = [random_no, random_no+1, random_no+2]
 
 # invoke the setter method of the GameBoard
 gb.set_locations_cells(locations)
-
+# gb.what_are_the_locations
 # variable to track if the game is alive
 is_alive = true
 
 while is_alive
-  puts 'Enter a number: '
+  # gb.what_are_the_locations
+  puts 'Enter a number between 0 and 6: '
   STDOUT.flush
   user_guess = gets.chomp
   # invoke the check_yourself method on the GameBoard object

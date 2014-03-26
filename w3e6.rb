@@ -9,4 +9,22 @@
 # You enter: HELLO GRANDMA
 # Grandma responds: NO, NOT SINCE 1938!
 
-puts "Hello Grandma" 
+# def random_date # This worked, but below (from discussion and we saw it before) is obviously leaner
+#   x = 0
+#   until x >= 1930
+#     x = rand(1950)
+#   end  
+#   return x
+# end
+
+puts "hi"
+response = gets.chomp
+until response == "BYE"
+  if response == response.upcase && response != ""
+    puts "NO, NOT SINCE #{rand(1930..1950)}!"
+  else
+    puts "HUH?! SPEAK UP, SONNY!"
+  end
+  puts "Your response:"
+  response = gets.chomp
+end

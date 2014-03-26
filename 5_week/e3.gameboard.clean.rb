@@ -1,3 +1,5 @@
+# temporary simplified version for testing and posting to find out what's wrong
+
 class GameBoard
   def initialize
     puts "Now the game starts"
